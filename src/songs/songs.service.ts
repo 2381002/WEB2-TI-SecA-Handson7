@@ -29,6 +29,8 @@ export class SongsService {
         this.songs = this.songs.filter((song) => song.id != id);
     }
 
+    // create(createSongDTO: CreateSongDTO) {}
+
     updateOne(id: number, createSongDTO: CreateSongDTO) {
         this.songs.forEach(song => {
             if(song.id == id) {
